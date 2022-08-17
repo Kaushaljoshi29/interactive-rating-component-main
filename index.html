@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <div class="rating-state">
+        <div class="rating-state-img-container">
+          <img
+            class="star-icon"
+            src="./images/icon-star.svg"
+            alt="stars-icon"
+          />
+        </div>
+        <h1 class="rating-state-heading">How did we do?</h1>
+        <p class="rating-state-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form class="rating-state-form">
+          
+          <input type="radio" id="rating1" name="rating-selected" value="1" />
+          <label class="rating-state-form-lable" for="rating1">1</label>
+          
+          <input type="radio" id="rating2" name="rating-selected" value="2" />
+          <label class="rating-state-form-lable" for="rating2">2</label>
+          
+          <input type="radio" id="rating3" name="rating-selected" value="3" />
+          <label class="rating-state-form-lable" for="rating3">3</label>
+          
+          <input type="radio" id="rating4" name="rating-selected" value="4" />
+          <label class="rating-state-form-lable" for="rating4">4</label>
+          
+          <input type="radio" id="rating5" name="rating-selected" value="5" />
+          <label class="rating-state-form-lable" for="rating5">5</label>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank-you-state hidden">
+        <img
+          class="thank-you-illustration"
+          src="./images/illustration-thank-you.svg"
+          alt="thank-you"
+        />
+        <p class="user-selection">
+          You selected <span class="user-selection-value"></span> out of 5
+        </p>
+
+        <p class="thank-you">Thank you!</p>
+        <p class="thank-you-state-description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </main>
+  </body>
+</html>
